@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Ejercicios de JavaScript</h1>
+
+    <p>Ejercicio 1: multiplicar numeros</p>
+
+    <input required type="number" name="" id="numero1" placeholder="Primer numero">
+    <input required type="number" name="" id="numero2" placeholder="Segundo numero">
+
+    <button type="reset" onclick="multiplicarNumeros(document.getElementById('numero1').value,
+                                    document.getElementById('numero2').value)">Multiplicar números</button>
+
+    <div id="respuesta1"></div>
+
+    <br>
+    <hr>
+
+    <p>Ejercicio 2: comparar numeros</p>
+
+    <input required type="number" name="" id="numero1" placeholder="Primer numero">
+    <input required type="number" name="" id="numero2" placeholder="Segundo numero">
+
+    <button type="reset" onclick="compararNumeros(document.getElementById('numero1').value,
+                                    document.getElementById('numero2').value)">Comparar números</button>
+
+    <div id="respuesta2"></div>
+
+    <br>
+    <hr>
+
+    <p>Ejecicio 3: concatenar oraciones</p>
+
+    <input type="text" name="" id="oracion1" placeholder="Primera oracion">
+    <input type="text" name="" id="oracion2" placeholder="Segunda oracion">
+
+    <button type="reset" onclick="concatenarOraciones(document.getElementById('oracion1').value,
+                                                        document.getElementById('oracion2').value)">Concatenar
+        oraciones</button>
+
+    <div id="respuesta3"></div>
+
+    <br>
+    <hr>
+
+    <p>Ejercicio 4: calcular monto final</p>
+
+    <input type="number" name="" id="monto" placeholder="Ingresar monto">
+    <select name="" id="medioDePago">
+        <option value="C">Tarjeta de crédito</option>
+        <option selected value="E">Efectivo</option>
+        <option value="D">Tarjeta de débito</option>
+    </select>
+
+    <button type="reset" onclick="calcularMonto(document.getElementById('monto').value,
+                                    select4.options[select4.selectedIndex].value)">Calcular monto</button>
+
+    <div id="respuesta4"></div>
+
+    <br>
+    <hr>
+
+    <p>Ejercicio 5: dibujar medio arbol </p>
+
+    <input type="number" name="" id="filas" placeholder="Cantidad de filas">
+
+    <button type="reset" onclick="dibujarArbol(document.getElementById('filas').value)">Dibujar medio arbol</button>
+
+    <div id="respuesta5"></div>
+
+    <br>
+    <hr>
+
+    <p>Ejercicio 6: dia de la semana</p>
+
+    <input type="number" name="" id="dia" placeholder="Ingresar numero">
+
+    <button type="reset" onclick="mostrarDia(document.getElementById('dia').value)">Mostrar día</button>
+
+    <div id="respuesta6"></div>
+
+    <br>
+    <hr>
+
+    <script src="./ejerciciosJS.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    a{
+        margin: 420px;
+        font-size: 100px;
+    }
+</style>
+
+<body><br><br><br><br><br><br><br><br><br><br>
+    <div><a href="http://google.com" onclick="return confirmar()"> Ir a Google</a></div>
+
+    <script>
+        function confirmar() {
+            let opcion = confirm('¿Desea ir a la siguiente página?');
+            if (opcion == true) return true;
+            else return false;
+        }
+    </script>
+
+
+
+</body>
+</html>
