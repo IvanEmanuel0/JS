@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenido">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla id consequuntur, totam sint corrupti temporibus.</p>
+        <p>Fuga, obcaecati itaque! Sapiente, quidem? Deserunt labore atque in quos similique ratione provident eaque placeat.</p>
+        <p>Minima quis consectetur cumque perspiciatis. Ipsum perferendis repellendus modi exercitationem recusandae iure incidunt blanditiis beatae?</p>
+        <p>Maiores eligendi temporibus natus accusantium earum magni ea facilis quod. Corporis facere laboriosam nostrum quaerat!</p>
+        <p>Eum quos dolorum aspernatur voluptate quis harum odio vitae nemo quia, id quibusdam consequatur minima.</p>
+        <p>Voluptatum dolore dolorem aliquam quas eos maxime autem natus non numquam! Corrupti reprehenderit accusamus aliquam!</p>
+        <p>Iusto, nulla, voluptatum cum tenetur temporibus similique repudiandae provident architecto totam eos ipsum accusantium. Sit?</p>
+        <p>Commodi consequuntur, exercitationem alias mollitia architecto voluptas tempore illum blanditiis doloribus minus eaque consequatur facere!</p>
+        <p>A rem delectus veniam sed, corporis ad at saepe non dolore, pariatur quasi deleniti nemo!</p>
+        <p>Expedita rem repellendus blanditiis culpa minus laboriosam facere corrupti minima voluptatem nihil. Minus, ullam recusandae.</p>
+    </div>
+
+    <script>
+        function generarNumeroAleatorio(){
+            let numero = Math.floor(Math.random() * 255);
+            return numero;
+        }
+
+        $(function(){
+            $('p').each(function () {
+                let rojo = generarNumeroAleatorio();
+                let verde = generarNumeroAleatorio();
+                let azul = generarNumeroAleatorio();
+
+                $(this).css("color", "rgb(" + rojo + "," + verde + "," + azul + ")");
+            })
+        })
+        
+
+    </script>
+</body>
+</html>
