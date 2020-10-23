@@ -45,16 +45,16 @@ function imprimirTotal(productoCantidad, productoTotal){
 
 function calcularTotalCantidad(productoCantidad){
     let cantidad = 0;
-    productoCantidad.each(function(){
-        cantidad += parseInt(productoCantidad.text());
+    productoCantidad.children('p').each(function(){
+        cantidad += parseInt($(this).text());
     });
     return cantidad;
 }
 
 function calcularTotalPrecio(productoTotal){
     let total = 0;
-    productoTotal.each(function(){
-        total += parseInt(productoTotal.text());
+    productoTotal.children('p').each(function(){
+        total += parseInt($(this).text());
     });
     return total;
 }
