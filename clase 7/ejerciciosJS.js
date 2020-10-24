@@ -3,6 +3,7 @@ function multiplicarNumeros(num1, num2) {
 }
 
 function compararNumeros(num1, num2) {
+    console.log(num1 + ' ' + num2);
     let texto;
     if (num1 > num2) texto = "El primer numero es mayor";
     else if (num1 < num2) texto = "El segundo numero es mayor";
